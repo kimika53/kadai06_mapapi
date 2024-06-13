@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Favourite Place</title>
+</head>
+<body>
+    <section id="library">
+        <div id="lib-grid"></div>
+    </section>
+    <section id="register">
+        <div >
+            <label>店名
+              <input type="text" id="shop-name" style="margin : 0 14px;" required="required">
+            </label>
+          </div>
+        <div>
+            <fieldset id="area">エリア<br>
+              <label><input type="radio" name="area" value="銀座・有楽町">銀座・有楽町</label>
+              <label><input type="radio" name="area" value="新宿">新宿</label>
+              <label><input type="radio" name="area" value="渋谷">渋谷</label>
+              <label><input type="radio" name="area" value="原宿・表参道">原宿・表参道</label>
+              <label><input type="radio" name="area" value="六本木">六本木</label>
+              <label><input type="radio" name="area" value="そのほか">そのほか</label>
+        </div>
+        <div>
+            <fieldset id="mealtime" required="required">時間帯<br>
+              <label><input type="checkbox" name="meal-time" value="ランチ">ランチ</label>
+              <label><input type="checkbox" name="meal-time" value="ディナー">ディナー</label>
+              <label><input type="checkbox" name="meal-time" value="アフタヌーンティー">アフタヌーンティー</label>
+              <label><input type="checkbox" name="meal-time" value="いつでも">いつでも</label>
+            </fieldset>
+          </div>
+          <div>
+            <fieldset id="price" required="required">価格<br>
+              <label><input type="radio" name="price" value="激安">激安</label>
+              <label><input type="radio" name="price" value="コスパよい">コスパよい</label>
+              <label><input type="radio" name="price" value="ラグジュアリー">ラグジュアリー</label>
+            </fieldset>
+        </div>
+        <div id="myMap"></div>
+        <div id="btn">
+            <button id="clear">取消</button>
+            <button id="save">保存</button>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=ApNy0FbNhcpUR2bK8kwmvKAvZI5osPXrxbdWBbogUqkzJ8c36fHS7zXvS9UlEsR0' async defer></script>
+    <script src="js/BmapQuery.js"></script>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
